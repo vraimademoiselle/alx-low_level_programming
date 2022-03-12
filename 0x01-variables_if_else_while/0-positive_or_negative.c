@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-  /**
-  *main - Prints if a random number is positive or negative
-  *
-  *Description: Uses main function
-  *Return: 0
-  */
+/**
+*main - Prints if a random number is positive or negative
+*
+*Description: Uses main function
+*Return: 0
+*/
 int main(void)
 {
 	int n;
