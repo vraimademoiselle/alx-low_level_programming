@@ -2,10 +2,10 @@
 
 /**
  * main - prints all possible combinations of single-digit numbers
- * Returns: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
-{
+	{
 		int n;
 
 		for (n = 48; n < 58; n++)
@@ -13,10 +13,11 @@ int main(void)
 			putchar(n);
 			if (n != 57)
 			{
-				putchar(',');
+				putchar('.');
 				putchar(' ');
+
 			}
 		}
 		putchar('\n');
 		return (0);
-}
+	}
