@@ -1,23 +1,35 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
+/* betty style doc for function main goes there */
 /**
- * main - prints all possible combinations of single-digit numbers
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
+{
+
+	int i;
+
+	i = 48;
+	while  (i < 58)
 	{
-		int n;
-
-		for (n = 48; n < 58; n++)
+		putchar(i);
+		if (i !=  57)
 		{
-			putchar(n);
-			if (n != 57)
-			{
-				putchar('.');
-				putchar(' ');
-
-			}
+			putchar(44);
+			putchar(32);
+			i++;
 		}
-		putchar('\n');
-		return (0);
+		else
+		{
+			i++;
+		}
 	}
+
+	putchar('\n');
+
+	return (0);
+}
