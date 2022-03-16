@@ -20,6 +20,6 @@ int main(void)
 
 		c++;
 	}
-	printf("%\n", sum);
+	printf("%i\n", sum);
 	return (0);
 }
