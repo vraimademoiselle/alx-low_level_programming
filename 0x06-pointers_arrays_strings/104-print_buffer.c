@@ -12,7 +12,6 @@ void print_buffer(char *b, int size)
 {
 int  i, j;
 char b_str[11], b_hex[26];
-
 for (i = 0; i < size; i++)
 {
 b_hex[0] = '\0';
