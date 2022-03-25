@@ -1,44 +1,78 @@
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
+
 /**
- *print_buffer - Prints a buffer.
- *@b: The buffer
- *@size: The size
- *
- *Return: none
+ * isPrintableASCII - determines if n is a printable ASCII char
+ * @n: integer
+ * Return: 1 if true, 0 if false
+ */
+int isPrintableASCII(int n)
+{
+	return (n >= 32 && n <= 126);
+}
+
+/**
+ * printHexes - print hex values for string b in formatted form
+ * @b: string to print
+ * @start: starting position
+ * @end: ending position
+ */
+void printHexes(char *b, int start, int end)
+{
+	int i = 0;
+
+	while (i < 10)
+	{
+		if (i < end)
+			printf("%02x", *(b + start + i));
+		else
+			printf("  ");
+		if (i % 2)
+			printf(" ");
+		i++;
+	}
+}
+
+/**
+ * printASCII - print ascii values for string b,
+ * formatted to replace nonprintable chars with '.'
+ * @b: string to print
+ * @start: starting position
+ * @end: ending position
+ */
+void printASCII(char *b, int start, int end)
+{
+	int ch, i = 0;
+
+	while (i < end)
+	{
+		ch = *(b + i + start);
+		if (!isPrintableASCII(ch))
+			ch = 46;
+		printf("%c", ch);
+		i++;
+	}
+}
+
+/**
+ * print_buffer - prints a buffer
+ * @b: string
+ * @size: size of buffer
  */
 void print_buffer(char *b, int size)
 {
-int  i, j;
-char b_str[11], b_hex[26];
-for (i = 0; i < size; i++)
-{
-b_hex[0] = '\0';
-if ((i % 10) == 0)
-{
-printf("%08x:", i);
-for (j = 0; j < 10; j++)
-{
-if ((j + i) >= size)
-if ((j % 2) == 0)
-sprintf(b_hex, "%s   ", b_hex);
-else
-sprintf(b_hex, "%s  ", b_hex);
-else
-{
-if ((j % 2) == 0)
-sprintf(b_hex, "%s %02x", b_hex, b[i + j]);
-else
-sprintf(b_hex, "%s%02x", b_hex, b[i + j]);
-b_str[j] = b[i + j] < 32 ? '.' : b[i + j];
-b_str[j + 1] = '\0';
-}
-}
-printf("%s %s", b_hex, b_str);
-printf("\n");
-}
-}
-if (size == 0)
-printf("\n");
+	int start, end;
+
+	if (size > 0)
+	{
+		for (start = 0; start < size; start += 10)
+		{
+			end = (size - start < 10) ? size - start : 10;
+			printf("%08x: ", start);
+			printHexes(b, start, end);
+			printASCII(b, start, end);
+			printf("\n");
+		}
+	} else
+		printf("\n");
 }
