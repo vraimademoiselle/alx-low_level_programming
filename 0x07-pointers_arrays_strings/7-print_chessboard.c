@@ -16,5 +16,10 @@ for (j = 0; j < 8; j++)
 {
 putchar((*(a + i))[j]);
 }
+<<<<<<< HEAD
 putchar('\n');
 }
+=======
+_putchar('\n');
+}
+>>>>>>> b0f18b4248eaa38e8dcc2fdef08addd313214a61
