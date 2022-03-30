@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  *_puts_recursion - Prints a string, followed by a new line.
@@ -8,14 +9,10 @@ void _puts_recursion(char *s)
 {
 if (*s)
 {
-_putchar(*s);
-_puts_recursion(s + 1);
+    _putchar(*s);
+    _puts_recursion(s + 1);
 }
 
 else
-_putchar('\n');
-<<<<<<< HEAD
+    _putchar('\n');
 }
-=======
-}
->>>>>>> 4b843b89944d1aab17644d434f4bb52776be486d
