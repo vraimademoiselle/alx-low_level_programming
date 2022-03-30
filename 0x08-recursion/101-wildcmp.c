@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * move_past_star - iterates past asterisk
  * @s2: the second string, can contain wildcard
