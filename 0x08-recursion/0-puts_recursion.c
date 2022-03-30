@@ -16,3 +16,5 @@ _puts_recursion(s + 1);
 else
 putchar('\n');
 }
+    _putchar('\n');
+    }
