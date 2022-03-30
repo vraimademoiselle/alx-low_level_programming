@@ -14,4 +14,8 @@ _puts_recursion(s + 1);
 
 else
 _putchar('\n');
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b843b89944d1aab17644d434f4bb52776be486d
