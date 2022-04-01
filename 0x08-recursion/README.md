@@ -17,4 +17,4 @@ File: 6-is_prime_number.c --- function that returns 1 if the input integer is a 
 
 File: 100-is_palindrome.c --- function that returns 1 if a string is a palindrome and 0 if not. Prototype: int is_palindrome(char *s);
 
-File: 101-wildcmp.c --- function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0. Prototype: int wildcmp(char *s1, char *s2);
+File: 101-wildcmp.c --- function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0. Prototype: int wildcmp(char *s1, char *s2)
