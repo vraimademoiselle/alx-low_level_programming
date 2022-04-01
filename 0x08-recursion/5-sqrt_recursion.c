@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * do_sqrt_recursion - needs the extra parameter r to work

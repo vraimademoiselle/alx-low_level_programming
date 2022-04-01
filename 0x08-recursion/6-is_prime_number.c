@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * do_is_prime_number - recursively determine if n > 2 is prime
