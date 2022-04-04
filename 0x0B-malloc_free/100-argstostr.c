@@ -72,7 +72,7 @@ return (size);
  * Return: pointer
  */
 
-char *str_addChar (char *str, char c)
+char *str_addChar(char *str, char c)
 {
 int size, i;
 char *m;
@@ -122,7 +122,7 @@ char **strtow(char *str)
 {
 int i;
 int spaces = nbr_spaces(str);
-char **tokens = NULL;//malloc(sizeof(char *) * (spaces));
+char **tokens = NULL;malloc(sizeof(char *) * (spaces));
 char *token;
 int checkingSpace = 0;
 int word = 0;
@@ -143,7 +143,7 @@ for (i = 0; str[i] != '\0'; i++)
 		{
 			word++;
 			checkingSpace = 1;
-		} 
+	} 
 	}
 	else
 	{
