@@ -32,7 +32,6 @@ return (w);
 * Return: pointer to an array of strings (Success)
 * or NULL (Error)
 */
-
 char **strtow(char *str)
 {
 char **matrix, *tmp;
@@ -61,19 +60,6 @@ return (NULL);
 while (start < end)
 *tmp++ = str[start++];
 *tmp = '\0';
-matrix[k] = tmp - c;
-k++;
-c = 0;
-}
-}
-else if (c++ == 0)
-start = i;
-}
-
-matrix[k] = NULL;
-
-return (matrix);
-}
 matrix[k] = tmp - c;
 k++;
 c = 0;
