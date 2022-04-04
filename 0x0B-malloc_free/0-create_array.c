@@ -8,12 +8,12 @@
  *then it finds the amount of adress needed to store an integer
  *which is 4 bytes
  */
-int main(void)
+char *create_array(unsigned int size, char c);
 {
 int i, n;
 printf("Enter the number of integers: ");
 scanf("%d", &n);
-int *ptr = (int *) malloc(n *sizeof(int));
+int *ptr = (int *)malloc(n*sizeof(int));
 if (ptr == NULL)
 {
 printf("Memory not available.");
