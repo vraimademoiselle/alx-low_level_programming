@@ -74,7 +74,6 @@ matrix[k] = NULL;
 
 return (matrix);
 }
-Ruweidha Noor8:35 PM
 matrix[k] = tmp - c;
 k++;
 c = 0;
