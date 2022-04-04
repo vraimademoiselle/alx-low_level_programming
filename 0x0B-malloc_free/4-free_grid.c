@@ -1,9 +1,9 @@
 #include <stdlib.h>
 
 /**
- * free_grid - free the grid
- * @grid: grid of memories
- * @height: int
+ * free_grid - frees 2 - dimension arrays of the grid
+ * @grid: grid of memories to be freed
+ * @height: height used.
  * Return: void
  */
 
