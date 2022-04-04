@@ -13,7 +13,7 @@ int main(void)
 int i, n;
 printf("Enter the number of integers: ");
 scanf("%d", &n);
-int *ptr = (int *) malloc(n*sizeof(int));
+int * ptr = (int *) malloc(n*sizeof(int));
 if (ptr == NULL)
 {
 printf("Memory not available.");
@@ -26,5 +26,5 @@ scanf("%d", ptr + 1);
 }
 for (i = 0; i < n; i++)
 printf("%d ", *(ptr + i));
-return (p);
+return (0);
 }
