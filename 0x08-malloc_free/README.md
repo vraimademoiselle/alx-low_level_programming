@@ -1,1 +1,1 @@
-malloc is a memory allocator but you have to be specific with the actual storage you want or its going to allocate memory.
+malloc is a memory allocator but you have to be specific with the actual storage you want or its going to allocate any memory.
