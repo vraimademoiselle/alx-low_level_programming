@@ -1,30 +1,33 @@
 #include "stdio.h"
 #include <stdlib.h>
 /**
- *main - This code uses malloc.
- *@*ptr here is a pointer variable
- *in order to execute malloc u need to use the prototpye -
- *int *ptr = (int *)malloc(n*sizeof(int));
- *then it finds the amount of adress needed to store an integer
- *which is 4 bytes
+ * *create_array - creates an array of chars,
+ * and initializes it with a specific char
+ * @size: size of the array to create
+ * @c: char to initialize the array c
+ *
+ * Return: pointer to the array (Success), NULL (Error)
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
-int i, n;
-printf("Enter the number of integers: ");
-scanf("%d", &n);
-int *ptr = (int *)malloc(n*sizeof(int));
-if (ptr == NULL)
-{
-printf("Memory not available.");
-exit(1);
-}
-for (i = 0; i < n; i++)
-{
-printf("Enter an integer: ");
-scanf("%d", ptr + 1);
-}
-for (i = 0; i < n; i++)
-printf("%d ", *(ptr + i));
-return (0);
-}
+	char *p;
+	unsigned int i = 0;
+
+	if (size == 0)
+		return (NULL);
+
+	p = (char *) malloc(sizeof(char) * size);
+
+	if (p == NULL)
+		return (0);
+
+	while (i < size)
+	{
+		*(p + i) = c;
+		i++;
+	}
+
+	*(p + i) = '\0';
+
+	return (p);
+    
