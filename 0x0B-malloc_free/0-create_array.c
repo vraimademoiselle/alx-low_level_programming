@@ -1,7 +1,6 @@
 #include "stdio.h"
 #include <stdlib.h>
 /**
- *
  *main - This code uses malloc.
  *@*ptr here is a pointer variable
  *in order to execute malloc u need to use the prototpye -
@@ -14,7 +13,7 @@ int main(void)
 int i, n;
 printf("Enter the number of integers: ");
 scanf("%d", &n);
-int *ptr = (int * ) malloc(n* sizeof(int));
+int *ptr = (int*) malloc(n* sizeof(int));
 if (ptr == NULL)
 {
 printf("Memory not available.");
