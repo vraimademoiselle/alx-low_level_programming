@@ -1,0 +1,1 @@
+malloc allocates storage
