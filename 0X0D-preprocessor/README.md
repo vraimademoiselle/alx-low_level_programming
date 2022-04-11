@@ -1,2 +1,0 @@
-This is a project about preprocessing source codes, and  the applicable 
-system that it goes through before it sends to the compiler.
