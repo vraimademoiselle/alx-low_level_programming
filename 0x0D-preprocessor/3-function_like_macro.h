@@ -1,16 +1,8 @@
 #ifndef function_like_macro.h
 #define function_like_macro.h
 
-#define ABS(x)
+#define ABS(x) ((x) < (0) ? ((x) * (-1)) : (x))
 /**
- *thus program computes the absolute value of x 
- * x is the value
+ *this program computes the absolute value of x 
  */
-int main(void)
-{
-    int x = 5;
-    printf("x = %d", x);
-
-    return(0);
-
-}
+#endif
