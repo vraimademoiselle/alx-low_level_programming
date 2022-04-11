@@ -1,10 +1,9 @@
 #include "stdio.h"
-#define main.c
 
 int main()
 
 {
-    printf("\n2-main.c");
+    printf("2-main.c\n");
     return 0;
 }
 
