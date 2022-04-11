@@ -1,12 +1,13 @@
 #include "stdio.h"
 /**
  * this program prints the file with a new file 
+ * Return: Always 0.
  */
 
 int main(void)
 
 {
-    printf("%s2-main.c\n", __FILE__);
+    printf("%s\n", __FILE__);
     return 0;
 }
 
