@@ -3,7 +3,7 @@
  * this program prints the file with a new file 
  */
 
-int main()
+int main(void)
 
 {
     printf("2-main.c\n");
