@@ -7,6 +7,8 @@
  * Desc: Header file containing all structures and
  *       prototypes used by the 3-main.c program.
  */
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  *struct op - A struct op.
