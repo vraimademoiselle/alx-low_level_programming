@@ -10,7 +10,7 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t Fatma = 0;
+	size_t nodes = 0;
 
 	while (h)
 	{
@@ -24,5 +24,5 @@ size_t print_list(const list_t *h)
 		h = h->next;
 	}
 
-	return (Fatma);
+	return (nodes);
 }
