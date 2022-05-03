@@ -1,8 +1,7 @@
 #ifndef _MAIN_
 #define _MAIN_
 
-#inclu
-de <sys/types.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
